@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Label layoutX="62.0" layoutY="46.0" prefHeight="53.0" prefWidth="230.0" text="Registration">
+            <font>
+                <Font name="System Bold" size="29.0" />
+            </font>
+        </Label>
+        <Label layoutX="106.0" layoutY="141.0" text="Firsrt Name" />
+        <Label layoutX="107.0" layoutY="179.0" text="Middle Name" />
+        <Label layoutX="108.0" layoutY="215.0" text="Last Name" />
+        <TextField fx:id="fname" layoutX="282.0" layoutY="136.0" />
+        <TextField fx:id="mname" layoutX="282.0" layoutY="174.0" />
+        <TextField fx:id="lname" layoutX="282.0" layoutY="210.0" />
+        <Label layoutX="108.0" layoutY="284.0" text="Mobile Number" />
+        <Label layoutX="106.0" layoutY="248.0" text="Emai Address" />
+        <TextField fx:id="email" layoutX="282.0" layoutY="243.0" />
+        <TextField fx:id="mobile" layoutX="282.0" layoutY="279.0" />
+        <ComboBox fx:id="day" layoutX="283.0" layoutY="319.0" prefHeight="26.0" prefWidth="76.0" promptText="Day" />
+        <Label layoutX="107.0" layoutY="324.0" text="Date Of Birth" />
+        <ComboBox fx:id="month" layoutX="367.0" layoutY="319.0" prefHeight="26.0" prefWidth="99.0" promptText="Month" />
+        <ComboBox fx:id="year" layoutX="477.0" layoutY="319.0" prefHeight="26.0" prefWidth="119.0" promptText="Year" />
+        <Label layoutX="108.0" layoutY="372.0" text="Gender" />
+        <RadioButton fx:id="male" layoutX="282.0" layoutY="371.0" mnemonicParsing="false" text="Male" />
+        <RadioButton fx:id="female" layoutX="381.0" layoutY="371.0" mnemonicParsing="false" text="Female" />
+        <Label layoutX="108.0" layoutY="406.0" text="Languages Known" />
+        <CheckBox fx:id="english" layoutX="285.0" layoutY="405.0" mnemonicParsing="false" text="English" />
+        <CheckBox fx:id="hindi" layoutX="381.0" layoutY="405.0" mnemonicParsing="false" text="Hindi" />
+        <CheckBox fx:id="gujarati" layoutX="466.0" layoutY="405.0" mnemonicParsing="false" text="Gujarati" />
+        <Button fx:id="submit" layoutX="299.0" layoutY="515.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="89.0" text="Submit" />
+        <Label fx:id="output" layoutX="90.0" layoutY="600.0" prefHeight="16.0" prefWidth="399.0" />
+    </children>
+</AnchorPane>
